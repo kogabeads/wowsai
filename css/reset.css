@@ -1,0 +1,40 @@
+/*=======重置样式========*/
+@charset utf-8;
+html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td { margin: 0; padding: 0; font-family: "Microsoft Yahei","微软雅黑"!important; font-size: 14px;}
+img { border: 0 none; vertical-align: top; }
+ul, li { list-style-type: none; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; }
+button { cursor: pointer; }
+i, em, cite { font-style: normal; }
+body { overflow: -moz-scrollbars-vertical;}
+a{}
+a, a:link { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { outline: none; }
+.fixed:after { content: "."; display: block; clear: both; height: 0; visibility: hidden; }
+.clear { diplay: block!important; float: none!important; clear: both; overflow: hidden; width: auto!important; height: 0!important; margin: 0 auto!important; padding: 0!important; font-size: 0; line-height: 0; }
+.fl, .fr { display: inline; float: left; }
+.point{width: 20px;height: 20px;border-radius:10px;margin-top:6px;}
+.toph{height:44px;}
+.fr { float: right; }
+.ju{ color:#ff7800;}
+.color999{ color:#999;}
+.color{ color:#00CCCC;}
+.fff{ color:#fff;}
+.black{ color:#000;}
+.size14{ font-size:14px;}
+.size16{ font-size:16px;}
+.size18{ font-size:18px;}
+.size20{ font-size:20px;}
+.size22{ font-size:22px;}
+.size24{ font-size:24px;}
+.size26{ font-size:26px;}
+.size28{ font-size:28px;}
+.size30{ font-size:30px;}
+.weight{ font-weight:bold;}
+.width1100{ width:1100px; margin:0 auto;}
+.width814{ width:814px; margin:0 auto;}
+.mauto{ margin:0 auto;}
+.center{ text-align:center;}
+.radius{ border-radius:5px;}
+.cursor{ cursor:pointer;}

@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+#banner{
+	width: 100%;
+	height: 525px;
+	overflow: hidden;
+	position: relative;
+}
+
+#banner img{
+	height:525px;
+}
+
+#banner ul{
+	height: 525px;
+}
+
+#banner ul li{
+	display: none;
+	position: absolute;
+}
+
+#banner ul li a{
+	display: block;
+}
+
+.arrow{
+	position: absolute;
+	display: none;
+    top: 50%;
+    margin-top: -30px;
+    z-index: 60;
+    height: 68px;
+    width: 68px;
+    background-image: url(../img/arrows.png);
+}
+
+#prve{
+	background-position: 0 0;
+	left: 10px;
+}
+
+#prve:hover{
+	background-position: 0 100%;
+}
+
+#next{
+	background-position: 100% 0;
+	right: 10px;
+}
+
+#next:hover{
+	background-position: 100% 100%;
+}
+
+#pointbox{
+	position:absolute;
+	width: 126px;
+	height: 12px;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	margin:auto;
+}
+
+#pointbox a{
+	float: left;
+    width: 13px;
+    height: 12px;
+    background: url(../img/bullet.png) left top;
+    float: left;
+    position: relative;
+    margin-left: 7px;
+    color: transparent;
+}
+
+#pointbox a:hover{
+	background-position: left bottom;
+}
+
+/*===========================content====================*/
+
+#content{
+	width: 1100px;
+    margin: 0 auto;
+}
+
+.container h2{
+	color: #999;
+    font-size: 30px;
+    padding: 70px 0 0 0;
+    text-align: center;
+}
+
+.container_list{
+	width: 242px;
+    height: 314px;
+    float: left;
+    margin: 40px 44px 0 0;
+}
+
+.container_list_big{
+	width: 528px;
+    height: 314px;
+}
+
+.container_list a{
+	width: 242px;
+    height: 314px;
+    display: block;
+    position: relative;
+}
+
+.container_list a img{
+	width: 242px;
+    height: 314px;
+}
+.container_list_big a img{
+	width: 528px;
+    height: 314px;
+}
+
+.container_list a .pod{
+	box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.1);
+	width: 162px;
+    padding: 17px;
+    background: #fff;
+    position: absolute;
+    bottom: -20px;
+    left: 23px;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #54d6d6;
+}    
+
+.container_list_big a .pod_big{
+	width: 448px;
+}
+
+.container_list a .pod:hover{
+	box-shadow: 5px 5px 0 0 rgba(255, 120, 0, 1);
+}
+    
