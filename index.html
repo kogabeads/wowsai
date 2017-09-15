@@ -58,71 +58,67 @@
     <div id="content">
         <div class="container clearfix">
             <h2>当日精选</h2>
-            <div class="container_list">
-                <a href="#" target="_blank">
-                    <img src="img/con_pic01.jpg" />
-                    <div class="pod">
-                        古典用品桃花润面霜
-                    </div>
-                </a>
+            <div class="theday">
+                
             </div>
-            <div class="container_list">
-                <a href="#" target="_blank">
-                    <img src="img/con_pic01.jpg" />
-                    <div class="pod">
-                        古典用品桃花润面霜
+            <script type="text/html" id="list_temp01">
+                <% for (var i = 0; i < 4; i++) {
+                    var product = products[i];
+                %>
+                    <div class="<%= product.class %>">
+                        <a href="#" target="_blank">
+                            <img src="<%= product.img %>" />
+                            <div class="pod">
+                                <%= product.title %>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-            <div class="container_list">
-                <a href="#" target="_blank">
-                    <img src="img/con_pic01.jpg" />
-                    <div class="pod">
-                        古典用品桃花润面霜
-                    </div>
-                </a>
-            </div>
-            <div class="container_list" style="margin-right: 0;">
-                <a href="#" target="_blank">
-                    <img src="img/con_pic01.jpg" />
-                    <div class="pod">
-                        古典用品桃花润面霜
-                    </div>
-                </a>
-            </div>
-        </div> 
-        <div class="container clearfix">
+
+                <% } %>
+            </script>
+        <div class="container clearfix" style="clear:both;">
             <h2>定制推荐</h2>
-            <div class="container_list">
-                <a href="#" target="_blank">
-                    <img src="img/con_pic01.jpg" />
-                    <div class="pod">
-                        古典用品桃花润面霜
-                    </div>
-                </a>
+            <div class="customization">
+                
             </div>
-            <div class="container_list container_list_big">
-                <a href="#" target="_blank">
-                    <img src="img/con_pic_big01.jpg" />
-                    <div class="pod pod_big">
-                        古典用品桃花润面霜
+            <script type="text/html" id="list_temp02">
+                <% for (var i = 4; i < 11; i++) {
+                    var product = products[i];
+                %>
+                    <div class="<%= product.class %>">
+                        <a href="#" target="_blank">
+                            <img src="<%= product.img %>" />
+                            <div class="pod">
+                                <%= product.title %>
+                            </div>
+                        </a>
                     </div>
-                </a>
+                <% } %>
+            </script>
+        </div> 
+        <div class="container clearfix" style="clear:both;">
+            <h2>设计精选</h2>
+            <div class="devise">
+                
             </div>
-            <div class="container_list" style="margin-right: 0;">
-                <a href="#" target="_blank">
-                    <img src="img/con_pic01.jpg" />
-                    <div class="pod">
-                        古典用品桃花润面霜
+            <script type="text/html" id="list_temp03">
+                <% for (var i = 11; i < 18; i++) {
+                    var product = products[i];
+                %>
+                    <div class="<%= product.class %>">
+                        <a href="#" target="_blank">
+                            <img src="<%= product.img %>" />
+                            <div class="pod">
+                                <%= product.title %>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-            
+                <% } %>
+            </script>
         </div> 
     </div>
     <div id="footer"></div>
 </body>
 <script src="library/requirejs/require.js" data-main="index"></script>
-<script src="index.js"></script>
 
 </html>
