@@ -55,68 +55,313 @@
     		<a class="circle" href="#"></a>
     	</div>
     </div>
-    <div id="content">
-        <div class="container clearfix">
-            <h2>当日精选</h2>
-            <div class="theday">
-                
-            </div>
-            <script type="text/html" id="list_temp01">
-                <% for (var i = 0; i < 4; i++) {
-                    var product = products[i];
-                %>
-                    <div class="<%= product.class %>">
-                        <a href="#" target="_blank">
-                            <img src="<%= product.img %>" />
-                            <div class="pod">
-                                <%= product.title %>
-                            </div>
-                        </a>
-                    </div>
 
-                <% } %>
-            </script>
-        <div class="container clearfix" style="clear:both;">
-            <h2>定制推荐</h2>
-            <div class="customization">
-                
+    <div class="con_bg">
+        <div id="content">
+
+            <!-- =====================当日精选========================== -->
+
+            <div class="container clearfix">
+                <h2>当日精选</h2>
+                <div class="theday">
+                    
+                </div>
+                <script type="text/html" id="list_temp01">
+                    <% for (var i = 0; i < 4; i++) {
+                        var product = products[i];
+                    %>
+                        <div class="<%= product.class %>">
+                            <a href="#" target="_blank">
+                                <img src="<%= product.img %>" />
+                                <div class="pod">
+                                    <%= product.title %>
+                                </div>
+                            </a>
+                        </div>
+
+                    <% } %>
+                </script>
             </div>
-            <script type="text/html" id="list_temp02">
-                <% for (var i = 4; i < 11; i++) {
-                    var product = products[i];
-                %>
-                    <div class="<%= product.class %>">
-                        <a href="#" target="_blank">
-                            <img src="<%= product.img %>" />
-                            <div class="pod">
-                                <%= product.title %>
-                            </div>
-                        </a>
-                    </div>
-                <% } %>
-            </script>
-        </div> 
-        <div class="container clearfix" style="clear:both;">
-            <h2>设计精选</h2>
-            <div class="devise">
-                
+
+            <!-- =====================定制推荐========================== -->
+
+            <div class="container clearfix" style="clear:both;">
+                <h2>定制推荐</h2>
+                <div class="customization">
+                    
+                </div>
+                <script type="text/html" id="list_temp02">
+                    <% for (var i = 4; i < 11; i++) {
+                        var product = products[i];
+                    %>
+                        <div class="<%= product.class %>">
+                            <a href="#" target="_blank">
+                                <img src="<%= product.img %>" />
+                                <div class="pod">
+                                    <%= product.title %>
+                                </div>
+                            </a>
+                        </div>
+                    <% } %>
+                </script>
+            </div> 
+
+            <!-- =====================设计精选========================== -->
+
+            <div class="container clearfix" style="clear:both;">
+                <h2>设计精选</h2>
+                <div class="devise">
+                    
+                </div>
+                <script type="text/html" id="list_temp03">
+                    <% for (var i = 11; i < 18; i++) {
+                        var product = products[i];
+                    %>
+                        <div class="<%= product.class %>">
+                            <a href="#" target="_blank">
+                                <img src="<%= product.img %>" />
+                                <div class="pod">
+                                    <%= product.title %>
+                                </div>
+                            </a>
+                        </div>
+                    <% } %>
+                </script>
+            </div> 
+
+            <div style="margin-top: 75px;"></div>
+
+            <!-- =====================闪购========================== -->
+
+            <div class="container clearfix" style="clear:both;">
+                <h2>闪购
+                    <a href="#" style="width:83px;"></a>
+                </h2>
+                <h2>总有些东西在激励着你</h2>
+                <div class="stimulate">
+                    
+                </div>
+                <script type="text/html" id="list_temp04">
+                    <% for (var i = 18; i < 21; i++) {
+                        var product = products[i];
+                    %>
+                        <div class="<%= product.class %> container_list2">
+                            <a href="#" target="_blank">
+                                <img src="<%= product.img %>" />
+                                <div class="pod">
+                                    <%= product.title %>
+                                </div>
+                            </a>
+                        </div>
+                    <% } %>
+                </script>
             </div>
-            <script type="text/html" id="list_temp03">
-                <% for (var i = 11; i < 18; i++) {
-                    var product = products[i];
-                %>
-                    <div class="<%= product.class %>">
-                        <a href="#" target="_blank">
-                            <img src="<%= product.img %>" />
-                            <div class="pod">
-                                <%= product.title %>
-                            </div>
-                        </a>
-                    </div>
-                <% } %>
-            </script>
-        </div> 
+
+            <!-- =====================他们会让你生活更有创意========================== -->
+
+            <div class="container clearfix" style="clear:both;">
+                <h2>他们会让你生活更有创意
+                    <a href="#" style="width:96px;background-position:0 -23px;"></a>
+                </h2>
+                <div class="designerlist" style="margin-top: 40px;">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/designer01.jpg" height="180" width="550" alt="">
+                                <div class="leftJ">
+                                    <p></p>
+                                    <dl>
+                                        <dt>
+                                            <img src="/img/DesMore.png" alt="">
+                                        </dt>
+                                        <dd>逃逃密TAOTAOMIX</dd>
+                                    </dl>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/designer02.jpg" height="180" width="550" alt="">
+                                <div class="leftJ">
+                                    <p></p>
+                                    <dl>
+                                        <dt>
+                                            <img src="/img/DesMore.png" alt="">
+                                        </dt>
+                                        <dd>山背后</dd>
+                                    </dl>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/designer03.jpg" height="180" width="550" alt="">
+                                <div class="leftJ">
+                                    <p style="float: left;"></p>
+                                    <dl style="left: 93px;top: 50px;">
+                                        <dt>
+                                            <img src="/img/DesMore.png" alt="">
+                                        </dt>
+                                        <dd>PTLIFE平田</dd>
+                                    </dl>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/designer04.jpg" height="180" width="550" alt="">
+                                <div class="leftJ">
+                                    <p style="float: left;"></p>
+                                    <dl style="left: 93px;top: 50px;">
+                                        <dt>
+                                            <img src="/img/DesMore.png" alt="">
+                                        </dt>
+                                        <dd>问童子</dd>
+                                    </dl>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/designer05.jpg" height="180" width="550" alt="">
+                                <div class="leftJ">
+                                    <p></p>
+                                    <dl>
+                                        <dt>
+                                            <img src="/img/DesMore.png" alt="">
+                                        </dt>
+                                        <dd>Maggie </dd>
+                                    </dl>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/designer06.jpg" height="180" width="550" alt="">
+                                <div class="leftJ">
+                                    <p></p>
+                                    <dl>
+                                        <dt>
+                                            <img src="/img/DesMore.png" alt="">
+                                        </dt>
+                                        <dd>士多</dd>
+                                    </dl>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- =====================他们会让你生活更有创意========================== -->
+
+            <div class="container clearfix" style="clear:both;padding-bottom: 90px;">
+                <h2>创意画报
+                    <a href="#" style="width: 111px;background-position: 0 -46px;"></a>
+                </h2>
+                <div class="container_list chuangyileft">
+                    <a target="_blank" href="#">
+                        <img src="img/con_pic20.jpg" height="314" width="242" alt="">
+                        <div class="pod">
+                            不要世纪婚礼~~只想牵手旅行
+                        </div>
+                    </a>
+                </div>
+                <div class="container_list container_list3">
+                    <a target="_blank" href="#">
+                        <img src="img/con_pic21.jpg" height="314" width="242" alt="">
+                        <div class="pod">
+                            手工客[闪购频道]购买下单流程
+                        </div>
+                    </a>
+                </div>
+                <div class="container_list container_list3" style="margin-right: 0;">
+                    <a target="_blank" href="#">
+                        <img src="img/con_pic22.jpg" height="314" width="242" alt="">
+                        <div class="pod">
+                            〖枫恋雅阁〗原创玉兰花清新系列发饰
+                        </div>
+                    </a>
+                </div>
+                <div class="container_list container_list3">
+                    <a target="_blank" href="#">
+                        <img src="img/con_pic23.jpg" height="314" width="242" alt="">
+                        <div class="pod">
+                            Kouichi Kimura: 滋贺乡下住宅
+                        </div>
+                    </a>
+                </div>
+                <div class="container_list container_list3" style="margin-right: 0;">
+                    <a target="_blank" href="#">
+                        <img src="img/con_pic24.jpg" height="314" width="242" alt="">
+                        <div class="pod">
+                            越南 不妨看一下这家漂亮的餐厅
+                        </div>
+                    </a>
+                </div>
+            </div>    
+        </div>
     </div>
+
+    <!-- =====================加入变革，焕新自我========================== -->
+
+    <div class="bootom">
+        <div class="container clearfix" style="clear:both;">
+            <h2>加入变革，焕新自我</h2>
+            <div class="container_list container_list2">
+                <a target="_blank" href="#">
+                    <img src="img/con_pic25.jpg" alt="">
+                    <div class="pod">
+                        不要世纪婚礼~~只想牵手旅行
+                    </div>
+                </a>
+            </div>
+            <div class="container_list container_list2">
+                <a target="_blank" href="#">
+                    <img src="img/con_pic26.jpg" alt="">
+                    <div class="pod">
+                        手工客[闪购频道]购买下单流程
+                    </div>
+                </a>
+            </div>
+            <div class="container_list container_list2" style="margin-right: 0;">
+                <a target="_blank" href="#">
+                    <img src="img/con_pic27.jpg" alt="">
+                    <div class="pod">
+                        〖枫恋雅阁〗原创玉兰花清新系列发饰
+                    </div>
+                </a>
+            </div>
+        </div>
+    
+
+        <!-- =====================设计品牌墙========================== -->
+
+        <div class="container clearfix" style="clear:both;background:#fff;">
+            <h2>设计品牌墙</h2>
+            <div class="brandList fixed">
+                <a href=""><img src="img/brand01.jpg" alt=""></a>
+                <a href=""><img src="img/brand02.jpg" alt=""></a>
+                <a href=""><img src="img/brand03.jpg" alt=""></a>
+                <a href=""><img src="img/brand04.jpg" alt=""></a>
+                <a href=""><img src="img/brand05.jpg" alt=""></a>
+                <a href=""><img src="img/brand06.jpg" alt=""></a>
+                <a href=""><img src="img/brand07.jpg" alt=""></a>
+                <a href=""><img src="img/brand08.jpg" alt=""></a>
+                <a href=""><img src="img/brand09.jpg" alt=""></a>
+                <a href=""><img src="img/brand10.jpg" alt=""></a>
+                <a href=""><img src="img/brand11.jpg" alt=""></a>
+                <a href=""><img src="img/brand12.jpg" alt=""></a>
+                <a href=""><img src="img/brand13.jpg" alt=""></a>
+                <a href=""><img src="img/brand14.jpg" alt=""></a>
+                <a href=""><img src="img/brand15.jpg" alt=""></a>
+                <a href=""><img src="img/brand16.jpg" alt=""></a>
+            </div>
+        </div>     
+    </div> 
+    
+    <div class="toTop"></div>
+
     <div id="footer"></div>
 </body>
 <script src="library/requirejs/require.js" data-main="index"></script>
