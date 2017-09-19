@@ -21,15 +21,15 @@
 
                 <!-- =====================注册表单====================== -->
     			<form action="" method="">
-    				<label>电子邮箱：<input class="inputtxt" type="text"><span>请输入一个用于登陆的电子邮箱地址</span></label><br>
-    				<label>取个昵称：<input class="inputtxt" type="text"><span>用于登陆的名字</span></label><br>
-    				<label>设置密码：<input class="inputtxt" type="text"><span>您的密码</span></label><br>
-    				<label>确认密码：<input class="inputtxt" type="text"><span>重复输入您的密码</span></label><br>
+    				<label>电子邮箱：<input id="email" class="inputtxt" type="text" required><span>请输入一个用于登陆的电子邮箱地址</span></label><br>
+    				<label>取个昵称：<input id="username" class="inputtxt" type="text" required><span>用于登陆的名字</span></label><br>
+    				<label>设置密码：<input id="upwd" class="inputtxt" type="password" required><span>您的密码</span></label><br>
+    				<label>确认密码：<input id="checkp" class="inputtxt" type="password" required><span>重复输入您的密码</span></label><br>
     				<i>性别：</i>
     				<label><input type="radio" name="sex"><b>女</b></label>
     				<label><input type="radio" name="sex"><b>男</b></label><br>
     				<label>
-    					<i style="margin-left:11px;">验证码：</i><input id="verify" type="text">
+    					<i style="margin-left:11px;">验证码：</i><input id="verify" type="text" required>
     					<a href="javascript:0;"></a>
     					<span>点击图片更换一张</span>
     				</label><br>
