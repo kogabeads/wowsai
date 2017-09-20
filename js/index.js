@@ -1,5 +1,7 @@
 require(["config"],function(){
-	require(["jquery","template","load","carousel"],function($,template){
+	require(["jquery","template","load","carousel","cookie"],function($,template){
+		
+		//	商品信息动态加载
 		$.getJSON("/mock/index_list.json", function(data){
 
 			// 主页---当日精选 商品列表

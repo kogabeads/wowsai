@@ -97,9 +97,10 @@
 			</div>
 			<div class="goodshotlove">
 				<div class="hotlove clearfix">
-					<a href="javascript:0;">最爱排行</a>
-					<a href="javascript:0;">热销排行</a>
+					<a class="rank" href="javascript:0;">最爱排行</a>
+					<a class="" href="javascript:0;">热销排行</a>
 				</div>
+				<ul style="display: none;"></ul>
 				<ul class="clearfix">
 					<li>
 						<dl class="kindsinfo clearfix">
@@ -412,7 +413,7 @@
 								<span class="minus fl">-</span>
 								<input class="amount fl" type="text" value="1">
 								<span class="add fl">+</span>
-								<span class="inventory fl">库存40件</span>
+								<span class="fl">库存</span><span class="inventory fl">40</span><span class="fl">件</span>
 							</dd>
 						</dl>
 					</p>
@@ -426,12 +427,12 @@
 			<div class="right_nav">
 				<ul>
 					<li class="select"><a href="javascript:0;">商品详情</a></li>
-					<li><a href="javascript:0;">买家评价</a></li>
-					<li><a href="javascript:0;">购买咨询</a></li>
-					<li><a href="javascript:0;">产品咨询</a></li>
+					<li class=""><a href="javascript:0;">买家评价</a></li>
+					<li class=""><a href="javascript:0;">购买咨询</a></li>
+					<li class=""><a href="javascript:0;">产品咨询</a></li>
 				</ul>
 			</div>
-			<div class="product_details">
+			<div class="product_details details_page">
 				<img style="margin-top: 20px;" src="/img/info1.jpg" alt="">
 				<img src="/img/info2.jpg" alt="">
 				<img src="/img/info3.jpg" alt="">
@@ -563,10 +564,10 @@
 					</a></li>
 				</ul>
 			</div>
-			<div class="appraise" style="display:none;">
+			<div class="appraise details_page" style="display:none;">
 				暂时没有商品评价
 			</div>
-			<div class="buy_conslut" style="display:none;">
+			<div class="buy_conslut details_page" style="display:none;">
 				<div class="conslut_tit">
 					<img src="/img/gmzx.gif" alt="">
 				</div>
@@ -597,7 +598,7 @@
 					</form>
 				</div>
 			</div>
-			<div class="goods_comment" style="display:none;">
+			<div class="goods_comment details_page" style="display:none;">
 				<div class="buy_conslut">
 					<div class="conslut_tit">
 						<img src="/img/goods_comment.gif" alt="">

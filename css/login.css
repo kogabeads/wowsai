@@ -65,6 +65,13 @@
     padding: 4px 6px;
 }
 
+#verify~a img{
+	width: 80px;
+	height: 26px;
+	display:inline-block;
+	margin-top: 8px;
+}
+
 .box form a{
 	color: #229CA0;
 }
