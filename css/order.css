@@ -1,0 +1,379 @@
+@charset "UTF-8";
+
+
+.store_baby{
+	margin-left: 140px;
+}
+
+.buygoods_list_tit_store{
+	margin-left: 20px;
+}
+
+.buygoods_list_con{
+	box-sizing: content-box;
+	padding-left: 20px;
+}
+
+.num_box{
+	margin-left: 45px;
+}
+
+.buygoods_list_con_youhuiinfo_else{
+	box-sizing: content-box;
+	padding-left: 10px;
+	padding-top: 33px;
+}
+
+.buygoods_list_con_youhuiinfo_else select{
+	float: left;
+	margin-left: 60px;
+}
+
+.buygoods_list_con_youhuiinfo_else a{
+	float: left;
+	width: 15px;
+	height: 15px;
+	margin:2px 0 0 2px;
+	background: url(/img/help.jpg);
+	cursor: pointer;
+}
+
+.wasai_money{
+	    width: 130px;
+}
+
+.cart_googs_num{
+	width: 140px;
+}
+
+.cart_youhui{
+	width: 150px;
+}
+
+.buygoods_list_con_wowsaimoney{
+	width: 100px;
+}
+
+.buygoods_list_con_littlecount{
+	width: 200px;
+}
+
+.buygoods_list_con{
+	width: 956px;
+}
+
+.write_order_info {
+    width: 975px;
+    height: auto;
+    border: 1px solid #EDEDED;
+    margin: 110px 0 25px;
+}
+
+.message_to_saller {
+    height: auto;
+    background: url(/img/dash_bg.jpg) bottom #F7F8F3 no-repeat;
+    padding-bottom: 15px;
+}
+
+.message_to_saller p {
+    width: 72px;
+    float: left;
+    line-height: 53px;
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+.message_to_saller textarea {
+    border-top: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #EEEEED;
+    border-bottom: 1px solid #EEEEED;
+    color: #AFAFAF;
+    font-size: 12px;
+    resize: none;
+    padding: 4px 0 0 5px;
+        margin: 16px 0px 0px 2px;
+    width: 680px;
+    height: 19px;
+}
+
+.use_youhuijuan {
+    height: 54px;
+    background: url(/img/write_order_info_two.jpg) no-repeat;
+    position: relative;
+}
+
+.use_youhuijuan_button {
+    width: auto;
+    height: auto;
+    float: left;
+    display: inline;
+    margin: 19px 0 0 16px;
+}
+
+.other_more_address input, .use_youhuijuan_button input, .storeyh_part_button input, .peisongtime dl dt input {
+    width: 14px;
+    height: 14px;
+}
+
+.use_youhuijuan_text {
+    width: 72px;
+    float: left;
+    line-height: 54px;
+    margin: 0 0 0 7px;
+}
+
+.youhuiquan_text_box {
+    width: 204px;
+    height: 25px;
+    margin-top: 16px;
+    float: left;
+}
+
+.youhuiquan_text_box input {
+    width: 198px;
+    height: 16px;
+    border: medium none;
+    color: #AFAFAF;
+    margin-left: 1px;
+    padding: 2px 0 0 2px;
+}
+
+.use_youhuijuan ul {
+    width: 200px;
+    position: absolute;
+    left: 110px;
+    top: 40px;
+    background: #ffffff;
+    z-index: 10;
+    display: none;
+}
+
+.yhj_use_button {
+    width: 65px;
+    height: 23px;
+    float: left;
+    background: url(/img/use_button_bg.jpg) no-repeat;
+    margin: 15px 0 0 8px;
+}
+
+.yhj_use_button input {
+    width: 65px;
+    height: 23px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.click_last {
+    width: 570px;
+    height: 25px;
+    float: left;
+    position: relative;
+    margin: 14px 0 0;
+}
+
+.click_last .youhui_notice {
+    background: url(/img/cuxiao_jiantou.jpg) no-repeat;
+    float: left;
+}
+
+.youhui_notice {
+    color: #FF6633;
+}
+
+.click_last a {
+    color: #229CA0;
+    line-height: 25px;
+    margin: 0 0 0 20px;
+}
+
+.click_last .youhui_hedu {
+    font-size: 14px;
+    font-weight: 700;
+    color: #FD834C;
+    position: absolute;
+    right: 20px;
+}
+
+.storeyh_peisong_count {
+    height: auto;
+}
+
+.storeyh_peisong_count .storeyh_part {
+    height: auto;
+    position: relative;
+}
+
+.parent_div {
+    height: 46px;
+    background: #F7F8F3;
+}
+
+.storeyh_peisong_count .storeyh_part .storeyh_part_button {
+    width: auto;
+    height: auto;
+    float: left;
+    display: inline;
+    margin: 16px 0 0 16px;
+        cursor: pointer;
+}
+
+.storeyh_peisong_count .storeyh_part .storeyh_part_text {
+    width: 72px;
+    float: left;
+    line-height: 46px;
+    margin: 0 0 0 7px;
+}
+
+.storeyh_select {
+    width: auto;
+    float: left;
+    height: auto;
+    color: #5B5B5B;
+    margin: 13px 0 0;
+}
+
+.storeyh_help, .write_order_info_two .ysfs_part .ysfs_part_help {
+    width: auto;
+    height: auto;
+    float: left;
+    margin: 15px 0 0 5px;
+}
+
+.storeyh_peisong_count .storeyh_part span {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 46px;
+    color: #FD834C;
+    position: absolute;
+    right: 32px;
+}
+
+.storeyh_peisong_count .ysfs_part {
+    height: 52px;
+    position: relative;
+    background: #F7F8F3;
+}
+
+.storeyh_peisong_count .ysfs_part .ysfs_part_text {
+    width: 60px;
+    float: left;
+    line-height: 52px;
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+.storeyh_peisong_count .ysfs_part .ysfs_part_select {
+    width: 140px;
+    float: left;
+    height: auto;
+    margin: 15px 0 0;
+}
+
+.storeyh_peisong_count .ysfs_part .ysfs_part_select select, .write_order_info_two .ysfs_part .ysfs_part_select select {
+    width: 140px;
+}
+
+.storeyh_peisong_count .ysfs_part .ysfs_part_help {
+    width: auto;
+    height: auto;
+    float: left;
+    margin: 17px 0 0 5px;
+}
+
+.storeyh_peisong_count .ysfs_part span {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 52px;
+    color: #FD834C;
+    position: absolute;
+    right: 32px;
+}
+
+.all_product_count {
+    height: 54px;
+    position: relative;
+    background: #F7F8F3;
+}
+
+.all_product_count p {
+    width: auto;
+    line-height: 54px;
+    position: absolute;
+    right: 32px;
+}
+
+.all_product_count p span {
+    color: #FD834C;
+    font-size: 14px;
+}
+
+.all_product_count p strong {
+    font-size: 18px;
+}
+
+.youhui_hedu {
+    font-size: 14px;
+    font-weight: 700;
+    color: #FD834C;
+    position: absolute;
+    right: 20px;
+}
+
+.message_to_saller{
+	box-sizing: content-box;
+	padding-left: 20px;
+}
+	
+
+.message_to_saller,.use_youhuijuan_text,.storeyh_part_text,.ysfs_part_text,.all_product_count p{
+	color:#5c5c5c;
+}
+
+.order_last_info {
+    width: 545px;
+    height: auto;
+    border: 1px solid #6FA60D;
+    margin: 15px 0 0 430px;
+}
+
+.order_last_info_in {
+    width: 539px;
+    height: auto;
+    border: 3px solid #EAF2DC;
+    padding: 0 0 12px;
+}
+
+.order_last_info_in p {
+    width: 509px;
+    text-align: right;
+    margin: 12px 0 0;
+}
+
+.order_last_info_in p span {
+    color: #FD834C;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.submit_order ul {
+    width: 326px;
+    height: 41px;
+    margin: 0 0 0 651px;
+}
+
+.submit_order ul .goback {
+    background: url(/img/goback.jpg) 25px 13px no-repeat;
+}
+
+.submit_order ul li {
+    width: 163px;
+    float: left;
+    text-align: center;
+    line-height: 41px;
+}
+
+.confirm_order_content_storename a, .confirm_order_content_con dl dd a, .submit_order ul li a, .confirm dd a {
+    color: #229CA0;
+}

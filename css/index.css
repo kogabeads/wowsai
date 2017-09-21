@@ -290,4 +290,54 @@
 	height:100%;
 }
 
+#erweima:hover{
+    background-position:0 0;
+}
 
+#ewm_pic {
+    width: 157px;
+    height: 189px;
+    position: fixed;
+    z-index: 999;
+    right: 280px;
+    bottom: 160px;
+    display: none;
+}
+
+#erweima {
+    width: 56px;
+    height: 56px;
+    background: url(/img/erweima.jpg) no-repeat;
+    z-index: 999;
+    position: fixed;
+    bottom: 160px;
+    right: 75px;
+    background-position: 0 -72px;
+    /*display: none;*/
+    cursor: pointer;
+}
+
+#toTop {
+    /*display: none;*/
+    text-decoration: none;
+    position: fixed;
+    bottom: 95px;
+    right: 75px;
+    overflow: hidden;
+    width: 56px;
+    height: 56px;
+    border: none;
+    text-indent: -999px;
+    background: url(/img/totop1.gif) no-repeat left top;
+    z-index: 99;
+}
+
+#toTopHover {
+    background: url(/img/totopd1.gif) no-repeat left;
+    width: 56px;
+    height: 56px;
+    display: block;
+    overflow: hidden;
+    float: left;
+    opacity: 0;
+}

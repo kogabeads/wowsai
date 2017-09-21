@@ -123,6 +123,76 @@
     margin: 2px 5px 0 0;
 }
 
+.address_area_over{
+    width: 412px;
+    height: 351px;
+    border: 1px solid #48aac7;
+    background: #FAFAFA;
+    position: absolute;
+    z-index: 10000;
+    left: 803.5px; 
+    top: 305px; 
+    display: block;
+}
+
+.address_area_over dl {
+    width: 396px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 0 0 8px;
+    border-bottom: 1px solid #c8c9ce;
+}
+
+.address_area_over dl dt {
+    font-size: 14px;
+    float: left;
+    width: 382px;
+}
+
+.address_area_over dl dd {
+    width: 14px;
+    height: 14px;
+    float: left;
+    cursor: pointer;
+}
+
+.address_area_over dl dd img {
+    margin-top: 10px;
+}
+
+.dangqian_city {
+    width: 396px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 0 0 8px;
+}
+
+.tb-clearfix {
+    width: 396px;
+    height: auto;
+    margin: 5px 0 0 8px;
+}
+
+.tb-clearfix li {
+    text-align: center;
+    width: 49px;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    margin: 0 30px 8px 0;
+    height: 20px;
+    float: left;
+    border: 1px solid #FAFAFA;
+    padding: 0 0 0 5px;
+    cursor:pointer;
+}
+
+.tb-clearfix li:hover{
+    border: 1px solid #49abc7;
+    background: rgb(230,246,250);
+    text-decoration: none;
+}
+
 .sendmessage a:nth-child(2){
 	font-family: 微软雅黑;
     width: 100px;
@@ -424,6 +494,13 @@
     float: left;
     cursor: pointer;
     padding-right: 4px;
+    box-sizing: content-box;
+}
+
+.buyer_add:hover{
+    border: 1px solid #49abc7;
+    background: rgb(230,246,250);
+    text-decoration: none;
 }
 
 .add_price{

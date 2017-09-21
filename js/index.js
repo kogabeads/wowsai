@@ -21,6 +21,23 @@ require(["config"],function(){
 			$(".stimulate").html(html);
 		});
 
+		//	隐藏区块
+		$("#erweima").hover(function(){
+			$("#ewm_pic").css("display","block");
+		},function(){
+			$("#ewm_pic").css("display","none");
+		});
+
+		$("#toTop").hover(function(){
+			$("#toTopHover").animate({opacity: '1'}, "slow");
+		},function(){
+			$("#toTopHover").animate({opacity: '0'}, "slow");
+		});
+
+		$("#toTop").click(function(){
+			document.body.scrollTop = 0;
+		});
+
 		setTimeout('$(".theday .container_list").eq(3).css("margin-right","0")',250);
 		setTimeout('$(".customization .container_list").eq(2).css("margin-right","0").end().eq(6).css("margin-right","0")',250);
 		setTimeout('$(".devise .container_list").eq(2).css("margin-right","0").end().eq(6).css("margin-right","0")',250);

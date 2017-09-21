@@ -1,5 +1,5 @@
 require(["config"],function(){
-	require(["jquery","load","cookie"],function($){
+	require(["jquery","cookie","load"],function($,cookie){
 		var info1 = false;
 
 		//	选择商品类型
@@ -17,6 +17,35 @@ require(["config"],function(){
 			$(".info_size a").not($(".info_size a").eq(0)).css({"border":"1px solid #c8c9ce","background":""});
 			$(this).css({"border":"1px solid rgb(119, 181, 0)","background":"url(/img/duigou_new.gif) no-repeat right bottom"});
 		});
+
+		var isBuyerAdd = false;
+		//	选择收货地址
+		$(".buyer_add").eq(0).click(function(){
+			if(isBuyerAdd == false){
+				$(".address_area_over").css({"display":"block","height":"351px"});
+				isBuyerAdd = true;
+			}else{
+				addHide();
+			}
+		});
+
+		$(".address_area_over img").click(function(){
+			addHide();
+		});
+
+		$(".address_area_over li a").click(function(){
+			addHide();
+			$(".dangqian_city a").html($(this).html());
+			$("#now_region").html($(this).html());
+		})
+
+		//	收货地址消失运动函数
+		function addHide(){
+			$(".address_area_over").animate({height: 0}, "slow",function(){
+				$(".address_area_over").css("display","none");
+				isBuyerAdd = false;
+			});
+		}
 
 		//	选择商品数量
 		$(".amount").eq(0).blur(function(){
@@ -102,5 +131,43 @@ require(["config"],function(){
 			$(".details_page").css("display","none");
 			$(".goods_comment").eq(0).css("display","block");
 		})
+
+		var info_size1 = false,
+			info_size2 = false;
+
+		//	选规格判定
+		$(".info_size a").eq(0).click(function(){
+			if(info_size1 == false){
+				info_size1 = true;
+			}else{
+				info_size1 = false;			}
+		});
+
+		$(".info_size a").not($(".info_size a").eq(0)).click(function(){
+			info_size2 = true;
+		});
+
+		
+		//	加入购物车
+		$(".info_right_btn a").eq(0).click(function(){
+			$.cookie.json = true;
+			var _products = $.cookie("products") || [];
+			//	判断是否选择规格
+			if(info_size1 == false || info_size2 == false){
+				alert("请选择规格");
+			}else{
+				//	判断是否已加入购物车
+				if(_products[0] == undefined){
+					var num = $(".amount").val();
+					var cookVal = [{'shop':'一朵光原创设计','address':'中国  北京市  朝阳','num':num,'img':'/img/big.jpeg','dscp':'绘一原创设计师品牌秋冬季风衣汉服和服个性女装','kind':'颜色:灰绿色花色 尺码:均码','coin':0,'price':269,'discounts':0}];
+					$.cookie("products",cookVal,{"expires":7,"path":"/"});
+					alert("成功加入购物车");
+				}
+				else{
+					alert("该商品已经在购物车中");
+				}
+			}
+		});
+
 	});
 });
